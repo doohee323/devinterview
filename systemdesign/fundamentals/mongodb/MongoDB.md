@@ -26,6 +26,7 @@
 	- Hearbeat check among primary and secondary using Arbiter
 	- Election for new primary when fault occurred on primary
 	- Casual consistency on client session (https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/)
+![Replica Set Architecture](MongoDB-replicaset.png)
 - Sharding
 	- Shards, MongoS, Config servers
     - Shard using Shard key. Key can't exceed 512byte
