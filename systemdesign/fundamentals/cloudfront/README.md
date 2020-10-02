@@ -26,7 +26,8 @@ Amazon의 CDN(Content Delivery Network) 서비스
     CloudFront가 콘텐츠를 즉시 제공.
 
 콘텐츠가 엣지 로케이션에 없는 경우: 
-    CloudFront는 콘텐츠의 최종 버전에 대한 소스로 지정된 오리진—예: Amazon S3 버킷, MediaPackage 채널, HTTP 서버(예: 웹 서버) 등에서 콘텐츠를 검색
+    CloudFront는 콘텐츠의 최종 버전에 대한 소스로 지정된 오리진에서 콘텐츠 검색
+    — 오리진 예: Amazon S3 버킷, MediaPackage 채널, HTTP 서버(예: 웹 서버)
 
 ```
 
