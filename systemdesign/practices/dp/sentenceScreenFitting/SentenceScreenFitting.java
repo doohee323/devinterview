@@ -1,4 +1,4 @@
-package practices.dp;
+package practices.dp.sentenceScreenFitting;
 
 public class SentenceScreenFitting {
 
