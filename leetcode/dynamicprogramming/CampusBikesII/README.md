@@ -30,6 +30,7 @@ return: minimum sum of distances from widx wokers
 # Implementation
 
 * [c++11](a.cpp)
+* [java8](Solution.java)
 
 # Complexity
 
