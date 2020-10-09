@@ -1,12 +1,12 @@
 # 750. Number of corner rectangles
 
 ## Problem
-![750. Number of corner rectangles][1.png]
+![750. Number of corner rectangles](1.png)
 
 ## Solution
 
 ### Brute force
-![Brute force][2.png]
+![Brute force](2.png)
 - 사각형을 확인하기 위해 2개의 y1=0, y2=y1+1 좌표 선택
 - x 좌표를 이동하면서 두개의 좌표에 모두 1이 있는 것의 카운트 갯수를 구함
 - 카운트된 갯수는 (count * (count -1))/2 계산으로 값을 변환
@@ -21,5 +21,5 @@
 
 ### DP
 아몰랑~!
-![아몰랑][3.png]
+![아몰랑](3.png)
 - 좌표와 dp 간 맵핑.. 모르겠음.
