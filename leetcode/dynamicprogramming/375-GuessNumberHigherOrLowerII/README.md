@@ -1,51 +1,34 @@
-# 418. Sentence Screen Fitting
+# 375. Guess Number Higher or Lower II
 
-- source: https://leetcode.com/problems/sentence-screen-fitting/
+- source: https://leetcode.com/problems/guess-number-higher-or-lower-ii/
 
 ## Approach
 ```
-    use a greedy approach: looking for MAXIMUM time the given sentence can be fitted
+    DP and optimization
 ```
 
 ## Complexity
 ```
-    O(n)
-    
-    Worst O(rows * cols)
-    O(1)
+    O(n^2)
 ```
 
 ## Explanation
 ```
-    len: the total length of s with white space
-    count: how many valid chars have been put so far
-    goal is to find: count/len
+    1) MinMax Algolism : https://www.youtube.com/watch?v=ZPtqO-d8eXg
+    체스, 오목, low-high 등 게임 및 AI 알고리즘에서 사용되는 최적 선택 상황에서 사용
     
-    If it’s space, means we successfully fill the first row. 
-    If it’s not space, then it means it’s in middle of words. We check one step left to see if it’s space. If it’s space then we just keep the current count. If not, we have to keep moving left one char by one char, (at the same time decrease the count) until we find a space.
-```
+     for(int i=l; i<=r; i++) {
+       ans = Math.min(ans, i + Math.max(helper(low, i-1), helper(i+1, high)));
+     }
 
-```
-	public int wordsTyping(String[] sentence, int rows, int cols) {
-
-		String sent = String.join(" ", sentence) + " "; // "hello world "
-		int pos = 0;
-		int totallen = sent.length(); // 12
-
-		for (int i = 0; i < rows; i++) {
-			pos += cols; // 8->6+8(14)
-
-			// case 1) for characters
-			// (Jump to the STARTING-POSITION of the next word)
-			while (pos >= 0 && sent.charAt(pos % totallen) != ' ') { // 8 % 12 = 8->
-																		// 14%12=2
-				pos--; // 8->5->12
-			}
-
-			// case 2)
-			pos++; // 5->6->2
-		}
-
-		return pos / totallen; // 2/
-	}
+    2) DP memorization
+    3) Optimize
+    
+        int ans = Integer.MAX_VALUE;    => 변수 사용
+        int m = l + (r - l) / 2; // mid point 추가로 iteration 범위 줄임
+        for (int i=m; i <= r; i++) {
+            ans = Math.min(ans, i + Math.max(helper(l, i-1, dp), helper(i+1, r, dp)));
+        }
+        dp[l][r] = ans;
+        
 ```

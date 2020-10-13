@@ -1,6 +1,5 @@
-package practices.dp.sentenceScreenFitting;
 
-public class SentenceScreenFitting {
+public class Solution {
 
 	public static void main(String[] args) {
 		SentenceScreenFitting b = new SentenceScreenFitting();

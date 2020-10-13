@@ -1,6 +1,5 @@
-package practices.dp.sentenceScreenFitting;
 
-public class GuessNumberHigherOrLowerII {
+public class Solution {
 
 // 1) MinMax Algo : https://www.youtube.com/watch?v=ZPtqO-d8eXg
 //   public int getMoneyAmount(int n) {
@@ -41,8 +40,9 @@ public class GuessNumberHigherOrLowerII {
       return dp[l][r];
     int ans = Integer.MAX_VALUE;
     int m = l + (r - l) / 2; // mid point
-    for (int i=m; i <= r; i++)
-      ans = Math.min(ans, i + Math.max(helper(l, i-1, dp), helper(i+1, r, dp)));
+    for (int i=m; i <= r; i++) {
+        ans = Math.min(ans, i + Math.max(helper(l, i-1, dp), helper(i+1, r, dp)));
+    }
     dp[l][r] = ans;
     return ans;
   }

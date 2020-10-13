@@ -1,8 +1,7 @@
-package practices.dp.bombEnemy;
 
 import java.util.Arrays;
 
-public class BombEnemy {
+public class Solution {
 
 	public static void main(String[] args) {
 		BombEnemy b = new BombEnemy();

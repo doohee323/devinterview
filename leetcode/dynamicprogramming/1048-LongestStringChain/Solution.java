@@ -1,6 +1,5 @@
-package practices.dp.sentenceScreenFitting;
 
-public class LongestStringChain {
+public class Solution {
 
 	public int longestStrChain(String[] words) {
 
