@@ -47,5 +47,5 @@ class Solution {
 ```
 
 ## Reference
-![Youtube Korean](https://www.youtube.com/watch?v=peQaD3tCn4E)
-![Youtube English](https://www.youtube.com/watch?v=mifTSHwqXEA)
+[Ricky Cho's Youtube Korean](https://www.youtube.com/watch?v=peQaD3tCn4E)
+[Ricky Cho's Youtube English](https://www.youtube.com/watch?v=mifTSHwqXEA)
