@@ -41,7 +41,7 @@
 
     Increase Counter whenever find new palindrome substring
 ```
-## Related Topic
+## Similar Problem
 ```
 [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
