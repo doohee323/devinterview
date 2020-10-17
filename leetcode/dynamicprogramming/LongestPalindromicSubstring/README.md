@@ -38,8 +38,4 @@
         DP(left, right+1) = s[left] == s[right+1]
             or ( s[left] == s[right] and right - left ==1 )
 ```
-## Similar Problem
-```
-[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
-[647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
-```
+
