@@ -62,3 +62,6 @@ package.json
 
 bin/
 .idea/
+
+.DS_Store
+.settings
