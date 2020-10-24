@@ -20,7 +20,7 @@ https://bit.ly/3mkrD5g
   0 (2,3,4) 1 (3,4) (1,2) 4 (1,2,3) 0
  C0 * C3 + C1 * C2 + C2 * C1 + C3 * C0 = 5+2+2+5 = 14
  
- (Ci - 1) * (Cn - 1) => count of Unique Binary Search Trees
+ (Ci - 1) * (Cn - 1) => count of Unique Binary Search Trees.
 
 ```
 
