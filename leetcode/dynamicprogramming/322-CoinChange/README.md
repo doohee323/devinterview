@@ -1,6 +1,7 @@
 # [322. Coin Change](https://leetcode.com/problems/coin-change/)
 
 ## Basic idea
+```
 - dfs 를 이용한 dp
     coins = [1,2,5], amount = 11
     
@@ -23,6 +24,7 @@
               0,1,2,3,4,5,6,7,8,9,10,11
         dp = [ , ,1,2,2,3,3,3,4,5 5,5]        
         dp[i] = Math.min(dp[i], dp[i-coins[j]]+1);
+```
 
 ## Code
 ```java
